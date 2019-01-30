@@ -11,6 +11,24 @@
 |
 */
 
+use App\Task;
+use Illuminate\Http\Request;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('tasks');
+});
+
+/**
+ * add a new task
+ */
+
+ Route::post('/task', function (Request $request) {
+    //
+ });
+
+/**
+ * delete an existing task
+ */
+Route::delete('/task/{id}', function($id) {
+    //
 });
